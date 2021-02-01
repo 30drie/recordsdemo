@@ -23,5 +23,5 @@ Console.ReadLine();
 
 static string DeveloperString(Developer dev)
 {
-	return $"Name: {dev.Name}, Company: {dev.Company}, Profession: {dev.Profession}";
+	return $"HashCode: {dev.GetHashCode()}, Name: {dev.Name}, Company: {dev.Company}, Profession: {dev.Profession}";
 }
