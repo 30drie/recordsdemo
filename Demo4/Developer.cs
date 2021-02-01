@@ -6,4 +6,7 @@
 
 	public Developer(string name, string comp, string prof) => 
 		(Company, Profession, Name) = (comp, prof, name);
+
+	public void Deconstruct(out string name, out string comp, out string prof) =>
+		(comp, prof, name) = (Company, Profession, Name);
 }
